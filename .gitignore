@@ -163,4 +163,4 @@ cython_debug/
 # Miscellaneous
 .DS_STORE
 *.mpy
-wlan.json
+*.json
