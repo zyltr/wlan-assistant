@@ -1,0 +1,17 @@
+{
+  "urls": [
+    [
+      "assistant/__init__.py",
+      "assistant/__init__.py"
+    ],
+    [
+      "assistant/interface.py",
+      "assistant/interface.py"
+    ],
+    [
+      "assistant/monitor.py",
+      "assistant/monitor.py"
+    ]
+  ],
+  "version": "1.0.0"
+}

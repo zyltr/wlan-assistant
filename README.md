@@ -20,6 +20,37 @@ It aims to do the following:
 - JSON files containing SSID and password for known networks.
     - <ins>**Optional, but recommended for simplicity.**</ins>
 
+## Installation
+
+For microcontrollers, copy the **assistant** directory to your microcontroller's root directory,
+preferably in a root subdirectory named **lib**.
+
+### Installing using `mpremote`
+
+*This only installs the core module onto the microcontroller and not the example or tests.*
+
+```shell
+mpremote mip install github:zyltr/wlan-assistant
+```
+
+### Installing using `mip` and `micropython`
+
+*This installs the core module, not the example and the tests, onto a directory on
+your computer.
+Ideal for local development.*
+
+```shell
+micropython -m mip install --target ./lib github:zyltr/wlan-assistant
+```
+
+*`--target ./lib` specifies the directory to install the module to.
+In this case, it will copy the module to the **lib** directory in the current directory, whatever that may be.*
+
+**For this command to work, you must compile `micropython` and then modify your computers PATH variable to include the
+directory containing the `micropython` executable.**
+
+[Building `micropython` on Unix](https://github.com/micropython/micropython/blob/master/ports/unix/README.md)
+
 ## Basic Usage
 
 ### AP (Access Point)
